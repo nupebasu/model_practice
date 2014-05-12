@@ -12,15 +12,16 @@ class QuestionsController < ApplicationController
 
     # Your Ruby goes here.
 
+    @director_of_longest_movie = Movie.order("duration DESC").first.director.name
+
     # @director_of_longest_movie = ???
   end
 
   def question_3
     # Which director has the most movies on the list?
 
-    # Your Ruby goes here.
+  # @director_with_the_most_movies = ???
 
-    # @director_with_the_most_movies = ???
   end
 
   def question_4
@@ -28,6 +29,8 @@ class QuestionsController < ApplicationController
     # (If there's a tie, any one of them is fine)
 
     # Your Ruby goes here.
+
+
 
     # @actor_with_the_most_movies = ???
   end
